@@ -1,4 +1,3 @@
-
 /*
  * The MIT License (MIT)
  *
@@ -40,11 +39,13 @@ import com.daimajia.androidanimations.library.bouncing_entrances.BounceInDownAni
 import com.daimajia.androidanimations.library.bouncing_entrances.BounceInLeftAnimator;
 import com.daimajia.androidanimations.library.bouncing_entrances.BounceInRightAnimator;
 import com.daimajia.androidanimations.library.bouncing_entrances.BounceInUpAnimator;
+import com.daimajia.androidanimations.library.fading_entrances.CustomFadeInAnimator;
 import com.daimajia.androidanimations.library.fading_entrances.FadeInAnimator;
 import com.daimajia.androidanimations.library.fading_entrances.FadeInDownAnimator;
 import com.daimajia.androidanimations.library.fading_entrances.FadeInLeftAnimator;
 import com.daimajia.androidanimations.library.fading_entrances.FadeInRightAnimator;
 import com.daimajia.androidanimations.library.fading_entrances.FadeInUpAnimator;
+import com.daimajia.androidanimations.library.fading_exits.CustomFadeOutAnimator;
 import com.daimajia.androidanimations.library.fading_exits.FadeOutAnimator;
 import com.daimajia.androidanimations.library.fading_exits.FadeOutDownAnimator;
 import com.daimajia.androidanimations.library.fading_exits.FadeOutLeftAnimator;
@@ -77,6 +78,7 @@ import com.daimajia.androidanimations.library.specials.RollOutAnimator;
 import com.daimajia.androidanimations.library.specials.in.DropOutAnimator;
 import com.daimajia.androidanimations.library.specials.in.LandingAnimator;
 import com.daimajia.androidanimations.library.specials.out.TakingOffAnimator;
+import com.daimajia.androidanimations.library.zooming_entrances.CustomZoomInAnimator;
 import com.daimajia.androidanimations.library.zooming_entrances.ZoomInAnimator;
 import com.daimajia.androidanimations.library.zooming_entrances.ZoomInDownAnimator;
 import com.daimajia.androidanimations.library.zooming_entrances.ZoomInLeftAnimator;
@@ -120,12 +122,14 @@ public enum Techniques {
     FadeInDown(FadeInDownAnimator.class),
     FadeInLeft(FadeInLeftAnimator.class),
     FadeInRight(FadeInRightAnimator.class),
+    CustomFadeIn(CustomFadeInAnimator.class),
 
     FadeOut(FadeOutAnimator.class),
     FadeOutDown(FadeOutDownAnimator.class),
     FadeOutLeft(FadeOutLeftAnimator.class),
     FadeOutRight(FadeOutRightAnimator.class),
     FadeOutUp(FadeOutUpAnimator.class),
+    CustomFadeOut(CustomFadeOutAnimator.class),
 
     FlipInX(FlipInXAnimator.class),
     FlipOutX(FlipOutXAnimator.class),
@@ -158,13 +162,13 @@ public enum Techniques {
     ZoomInLeft(ZoomInLeftAnimator.class),
     ZoomInRight(ZoomInRightAnimator.class),
     ZoomInUp(ZoomInUpAnimator.class),
+    CustomZoomIn(CustomZoomInAnimator.class),
 
     ZoomOut(ZoomOutAnimator.class),
     ZoomOutDown(ZoomOutDownAnimator.class),
     ZoomOutLeft(ZoomOutLeftAnimator.class),
     ZoomOutRight(ZoomOutRightAnimator.class),
     ZoomOutUp(ZoomOutUpAnimator.class);
-
 
 
     private Class animatorClazz;
