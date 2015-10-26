@@ -1,13 +1,13 @@
 apply plugin: 'android-library'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion COMPILE_SDK_VERSION as int
+    buildToolsVersion BUILD_TOOLS_VERSION
 
     defaultConfig {
 //        applicationId "com..androidanimations.library"
         minSdkVersion 8
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 13
         versionName "1.1.3"
     }
